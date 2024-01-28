@@ -32,10 +32,21 @@
         <script src="js/leaderboard.js"></script>
         <br><br><br>
         <section class="how-it-works">
-            <h2 class="subheading"><b>eD Score Calculation</b></h2>
-            <p class="subtext" style="line-height: 1.5;">
-                The eD score is calculated using a comprehensive approach to ensure fairness and accuracy. All data collected on utilities such as chilled water and electricity usage are standardized by computing the z-score, making eD always relative. The z-score is then multiplied by the Metric Tons of Carbon Dioxide Equivalents for each utility and summed to create a preliminary score. Finally, we apply the sigmoid function to the preliminary score, which moderates the scale of progress—making initial improvements more impactful than later ones and ensuring that advancing from a small to medium eD score is easier than progressing from medium to high.
-            </p>
+            <h2 class="subheading"><b>ecoDebt Score Calculation</b></h2>
+            <p class="subtext" style="line-height: 1.5;"> The ecoDebt score (eD) is a measure of envrionmental debt for each dorm. The lower the eD score, the less impact that dorm has on the environment. The eD score is calculated using a comprehensive approach to ensure fairness and accuracy:</p>
+                <ol>
+                        <li>For any given dorm, we first collect utilities usage data. This information includes heating, cooling, natural gas, and general electricity use. </li>
+                        <br>
+                        <li>Next, we compute how many Metric Tons of CO2 are emitted for each type of utility usage.</li>
+                        <br>
+                        <li>Normalize the data by finding the z-score to ensure all eD scores are relative.</li>
+                        <br>
+                        <li>Multiply the z-score for each utility by its corresponding proportion to the total Metric Tons of CO2. Sum these products for all utilities to create a preliminary ecoDebt score. </li>
+                        <br>
+                        <li>Apply the logarithmic function to the preliminary score. This mathematical function moderates the scale of progress, making initial environmental improvements more impactful than later ones. This ensures that advancing from a small to a medium eD score is easier than progressing from a medium to a high score. The logarithmic function creates a more balanced and fair scoring system that encourages continuous improvement.</li>
+                        </li>
+                </ol>
+        
         </section>
     </main>
 </body>

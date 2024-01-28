@@ -93,3 +93,16 @@ body {
     padding-bottom: 20px;
     font-weight: normal;
 }
+
+li{
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.5;
+}
+ol {
+    text-align: left;
+    padding-left: 13%;
+    padding-bottom: 20px;
+    max-width: 80%;
+    font-size: 20px;
+}
