@@ -40,13 +40,21 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="leaderboard.html">Leaderboard</a></li>
             <li><a href="dorms.html">Dorms</a></li>
+            <li><a href="prizes.html">Prizes</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <div style="display: block; max-width:1600px; text-align: center; margin-left: auto; margin-right: auto;">
+    <main>
+        <h1 class = "heading">Environmental Impact Dashboard</h1>
+        <h2 class = "subheading"><b>How it Works </b></h2>
+        <p class = "subtext" style = "line-height: 1.5;">Select a dormitory from the dropdown menu to view its unique energy consumption profile and understand how different utilities contribute to its total carbon footprint. The stacked bar chart will display the proportion of chilled water, heating, electricity usage, and natural graphs that translates into metric tons of CO2 emissions. This visualization aids in identifying key areas for energy-saving improvements and fostering a culture of sustainability within our living spaces. This is also how we calculate eD (ecoDebt) scores each month!</p>
+        <h2 class = "subheading" style="padding-bottom: 0;"><b>Explore the Carbon Footprint of Each Dorm</b></h2>
+    <div style="display: block; max-width:1600px; text-align: center; margin-left: auto; margin-right: auto;padding-left: 10%;padding-right: 10%;">
         <select id="house-select" class="form-select"></select>
         <canvas id="chart"></canvas>
         <script src="js/dorm-data.js"></script>
+        <br><br>
+    </main>
     </div>
 </body>
 </html>
